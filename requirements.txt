@@ -5,4 +5,5 @@ datetime
 aiohttp  
 pypresence  
 colorama  
-colored   
+colored
+flask
