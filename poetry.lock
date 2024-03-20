@@ -119,6 +119,14 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "requests"
+version = "2.31.0"
+description = "Requests is a simple, yet elegant, HTTP library."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "idna"
 version = "3.2"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -219,6 +227,7 @@ colored = []
 discord = []
 "discord.py" = []
 flask = []
+requests = []
 idna = []
 itsdangerous = []
 jinja2 = []
