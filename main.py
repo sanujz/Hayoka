@@ -22,7 +22,7 @@ from colored import fg, attr
 os.system('cls & mode 85,20 & title [Hayoka] - https://discord.gg/chillzone')
 os.system('cls')
 
-token = "MTIxOTI3NDEwNjk4MjM2NzI0Mw.G4duIy.bi7dtTT4XVSs3w4mzMpiX8vpGO2xTps3ZASfCI"
+token = os.getenv("token")
 prefix = ""
 
 client = commands.Bot(command_prefix=prefix, case_insensitive=True, self_bot=True)
