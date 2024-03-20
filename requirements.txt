@@ -1,0 +1,8 @@
+discord
+asyncio
+requests 
+datetime 
+aiohttp  
+pypresence  
+colorama  
+colored   
