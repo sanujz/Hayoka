@@ -193,7 +193,7 @@ watchdog = ["watchdog"]
 
 [[package]]
 name = "yarl"
-version = "==1.6.3"
+version = "1.9.4"
 description = "Yet another URL library"
 category = "main"
 optional = false
